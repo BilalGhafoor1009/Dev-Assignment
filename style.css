@@ -58,13 +58,14 @@ nav {
   font-size: 35px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: larger;
 }
 .image_S1 {
   padding-top: 15px 15px;
 }
 .right {
   flex-basis: 40%;
-  text-align: right;
+  text-align: center;
 }
 .right img {
   width: 70%;
@@ -527,6 +528,7 @@ width: 30%;
   .row {
     text-align: center;
   }
+  
   .col-2,
   .col-3,
   .col-4 {
@@ -552,6 +554,7 @@ width: 30%;
   }
 }
 
+
 /* clients */
 fcontainer {
   border: 2px solid grey;
@@ -568,7 +571,16 @@ fcontainer {
   /* flex-wrap: wrap-reverse; */
   /* flex-flow: column wrap; */
 }
-
+@media only screen and (max-width: 600px) {
+  .fitem_item1,
+  .fitem_item2
+  .fitem_item3
+  .fitem_item4
+  fitem_item5 {
+    text-align: center;
+    padding: 10px;
+  }
+}
 .fitem {
    background-color: rgba(0, 0, 0, 0.05); 
   display: flex;
